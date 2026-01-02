@@ -1,0 +1,122 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeConnect - Learn JS with Friends</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CodeConnect</h1>
+        <p>Learn JavaScript, connect with students worldwide 🌍</p>
+    </header>
+    <main>
+        <section id="tutorials">
+            <h2>JavaScript Tutorials</h2>
+            <h3>Variables and Data Types</h3>
+            <pre>
+                <code>
+let name = 'Isaac';
+const country = 'Zambia';
+console.log(name, country);
+                </code>
+            </pre>
+            <h3>Functions</h3>
+            <pre>
+                <code>
+function greet(name) {
+    return `Hey, ${name}!`;
+}
+console.log(greet('Isaac'));
+                </code>
+            </pre>
+        </section>
+        <section id="challenges">
+            <h2>Coding Challenges</h2>
+            <p>Try this: Write a JS function to check if a number is even.</p>
+            <pre>
+                <code>
+// Your code here
+function isEven(num) {
+    return num % 2 === 0;
+}
+                </code>
+            </pre>
+        </section>
+        <section id="forum">
+            <h2>Forum</h2>
+            <p>Discuss JS topics with students worldwide! 🤝</p>
+            <!-- Add forum functionality later -->
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+// script.js
+console.log('CodeConnect loaded! 😊');
+
+// Function to greet users
+function greetUser(name) {
+    alert(`Hey, ${name}! Welcome to CodeConnect`);
+}
+
+// Function to check if number is even
+function isEven(num) {
+    return num % 2 === 0;
+}
+
+// Example usage
+console.log(isEven(4)); // true
+console.log(isEven(5)); // false
+
+// Add event listener to a button (if you add one in HTML)
+document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('myBtn');
+    if (btn) {
+        btn.addEventListener('click', () => {
+            greetUser('Isaac');
+        });
+    }
+});
